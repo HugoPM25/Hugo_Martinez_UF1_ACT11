@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textViewNom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nom:"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextNom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Introdueix el teu nom"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textViewCognom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cognom:"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextCognom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Introdueix el teu cognom"
+                android:inputType="textPersonName" />
+
+
+            <TextView
+                android:id="@+id/textViewGenera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gènere:"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupGenera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonMasculi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masculí" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonFemeni"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Femení" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonAltres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Altres" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/textViewTelefon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Telèfon:"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextTelefon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Introdueix el teu telèfon"
+                android:inputType="phone" />
+
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Correu electrònic:"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Introdueix el teu correu electrònic"
+                android:inputType="textEmailAddress" />
+
+            <Button
+                android:id="@+id/buttonEnviar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
